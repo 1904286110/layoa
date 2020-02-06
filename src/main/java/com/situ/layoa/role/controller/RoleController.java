@@ -27,6 +27,7 @@ public class RoleController implements Serializable {
 	public Integer checkname(String roleName) {
 		Integer result=1;
 		if(roleService.findByName(roleName)!=null) {
+			
 			result=0;
 		}
 		return result;
